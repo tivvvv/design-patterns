@@ -1,0 +1,18 @@
+package com.tiv.design.patterns.behavioral.command.command;
+
+import com.tiv.design.patterns.behavioral.command.Light;
+
+public class TurnOnCommand implements Command {
+
+    private Light light;
+
+    public TurnOnCommand(Light light) {
+        this.light = light;
+    }
+
+    @Override
+    public void execute() {
+        light.turnOn();
+    }
+
+}
